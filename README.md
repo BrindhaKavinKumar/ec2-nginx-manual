@@ -1,5 +1,4 @@
-1. Title & Goal
-
+**1. Title & Goal**
 # EC2 + Nginx (Manual Setup, Zero Magic)
 
 This project demonstrates a manual setup of an EC2 instance running Nginx,
@@ -7,8 +6,7 @@ with a strong focus on understanding traffic flow, Linux services,
 networking, and debugging.
 
 
-2. Architecture Overview
-
+**2. Architecture Overview**
 ## Architecture
 
 User Browser
@@ -20,8 +18,7 @@ User Browser
 → HTML File
 
 
-3. Step-by-Step Setup (high level, not tutorial spam)
-
+**3. Step-by-Step Setup (high level, not tutorial spam)**
 ## Setup Summary
 
 1. Launch Ubuntu EC2 in public subnet
@@ -31,8 +28,7 @@ User Browser
 5. Verify service with systemctl and curl
 
 
-4. How Traffic Reaches the Server (MOST IMPORTANT SECTION)
-
+**4. How Traffic Reaches the Server (MOST IMPORTANT SECTION)**
 ## How Traffic Works
 
 - Browser sends HTTP request to public IP
@@ -42,8 +38,7 @@ User Browser
 - Nginx maps URL to /var/www/html
 - HTML file is returned
 
-5. Debugging Checklist (this differentiates you)
-
+**5. Debugging Checklist (this differentiates you)**
 ## Debugging Checklist
 
 - Is the EC2 instance running?
@@ -55,8 +50,7 @@ User Browser
 - Are nginx configs correct?
 - Check logs (journalctl, nginx error.log)
 
-6. Common Failures & Fixes
-
+**6. Common Failures & Fixes**
 ## Common Issues
 
 | Issue | Root Cause | Fix |
@@ -66,8 +60,7 @@ User Browser
 | 404 error | File missing | Check /var/www/html |
 
 
-7. Cost Awareness (huge bonus)
-
+**7. Cost Awareness (huge bonus)**
 ## Cost Notes
 
 - Used t2.micro / t3.micro (free-tier eligible)
